@@ -1,0 +1,92 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.col-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.col-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+@media screen and (min-width: 37.5em) {
+  .container {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+  .col-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+  .col-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .container {
+    max-width: 70em;
+    margin: 0 auto;
+  }
+  .col-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .col-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+.mybutton {
+  background: blue;
+  font-size: 1em;
+}
+
+.card {
+  background-color: beige;
+  border-radius: .4em;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.stretch {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+/*# sourceMappingURL=styles.css.map */
